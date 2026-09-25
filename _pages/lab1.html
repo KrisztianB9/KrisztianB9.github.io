@@ -1,0 +1,89 @@
+<!-- _pages/lab1.html -->
+
+<style>
+    #sakktabla {
+        margin: 2rem auto;
+        width: 80vmin;
+        height: 80vmin;
+        max-width: 600px;
+        max-height: 600px;
+        border: 4px solid #333;
+        box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+        background-color: #f0d9b5;
+        border-collapse: collapse;
+    }
+
+    #sakktabla td {
+        width: 12.5%;
+        height: 12.5%;
+        transition: all 0.2s ease-in-out;
+    }
+
+    /* 1. Páratlan */
+    #sakktabla tr:nth-child(odd) td:nth-child(even),
+        /* 2. Páros */
+    #sakktabla tr:nth-child(even) td:nth-child(odd) {
+        background-color: #b58863;
+    }
+
+    #sakktabla td:hover {
+        background-color: #7FA650;
+        cursor: pointer;
+        box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.5);
+        transform: scale(1.05);
+    }
+
+    @media (prefers-color-scheme: dark) {
+        #sakktabla {
+            border-color: #fff;
+            box-shadow: 0 10px 25px rgba(255, 255, 255, 0.1);
+            background-color: #ddd;
+        }
+
+        #sakktabla tr:nth-child(odd) td:nth-child(even),
+        #sakktabla tr:nth-child(even) td:nth-child(odd) {
+            background-color: #222;
+        }
+
+        #sakktabla td:hover {
+            background-color: #ffeb3b;
+            box-shadow: inset 0 0 15px rgba(0, 0, 0, 0.8);
+        }
+    }
+
+</style>
+
+<table id='sakktabla' cellspacing=0>
+    <tr>
+        <td></td><td></td><td></td><td></td>
+        <td></td><td></td><td></td><td></td>
+    </tr>
+    <tr>
+        <td></td><td></td><td></td><td></td>
+        <td></td><td></td><td></td><td></td>
+    </tr>
+    <tr>
+        <td></td><td></td><td></td><td></td>
+        <td></td><td></td><td></td><td></td>
+    </tr>
+    <tr>
+        <td></td><td></td><td></td><td></td>
+        <td></td><td></td><td></td><td></td>
+    </tr>
+    <tr>
+        <td></td><td></td><td></td><td></td>
+        <td></td><td></td><td></td><td></td>
+    </tr>
+    <tr>
+        <td></td><td></td><td></td><td></td>
+        <td></td><td></td><td></td><td></td>
+    </tr>
+    <tr>
+        <td></td><td></td><td></td><td></td>
+        <td></td><td></td><td></td><td></td>
+    </tr>
+    <tr>
+        <td></td><td></td><td></td><td></td>
+        <td></td><td></td><td></td><td></td>
+    </tr>
+</table>
