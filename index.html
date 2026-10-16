@@ -80,6 +80,7 @@
             statusDiv.innerHTML = "<span style='color: blue;'>Üzenet küldése folyamatban...</span>";
 
             emailjs.sendForm('service_l4sd8l5', 'template_1jh8ryl', form)
+            emailjs.sendForm('service_l4sd8l5', 'template_241vhnc', form)
                 .then(function() {
                     statusDiv.innerHTML = "<span style='color: green;'>Üzenet sikeresen elküldve! Másolatot kapott e-mailben is. ✅</span>";
                     form.reset();
